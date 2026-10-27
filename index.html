@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Personal portfolio of deetya batra, showcasing programming projects, technical skills, and AI chatbot integration."
+  />
+
+  <meta name="theme-color" content="#f5f7fb" />
+  <title>Deetya batra | Developer Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="chatbot.css" />
+</head>
+
+<body>
+  <!-- Header and navigation -->
+  <header class="site-header" id="home">
+    <p class="eyebrow">Developer Portfolio · India</p>
+
+    <h1>Deetya batra</h1>
+
+    <p class="tagline">
+      Aspiring developer passionate about Python, web development,
+      artificial intelligence, and building useful digital experiences.
+    </p>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#aiChatSection">AI Assistant</a>
+    </nav>
+
+    <button type="button" id="themeToggle" aria-pressed="false">
+      Switch to Dark Mode
+    </button>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+
+      <p>
+        Hello! I am Deetya batra, an aspiring developer interested in
+        programming, web development, and artificial intelligence.
+        I enjoy learning new technologies and applying them to practical
+        projects.
+      </p>
+
+      <p>
+        My goal is to improve my technical and problem-solving skills by
+        developing responsive websites, Python applications, and
+        interactive projects.
+      </p>
+
+      <h3>Education</h3>
+      <p>
+        I am developing my programming and technical skills through my
+        academic studies and practical assignments.
+      </p>
+      <!-- Add your actual course, college, and graduation year here. -->
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical Skills</h2>
+
+      <ul>
+        <li>Python Programming</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Git and GitHub</li>
+        <li>Debugging and Code Improvement</li>
+        <li>AI-Assisted Development</li>
+        <li>API Integration</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects"
+      aria-labelledby="projects-heading">
+
+      <h2 id="projects-heading">My Projects</h2>
+
+      <p>
+        Explore my programming and application projects. Search by project
+        name or technology to find a specific project.
+      </p>
+
+      <div class="project-search">
+        <label for="projectSearch">Search projects</label>
+
+        <input
+          type="search"
+          id="projectSearch"
+          placeholder="Try Python, Quiz, JavaScript, or Book..."
+          autocomplete="off"
+        />
+
+        <label for="technologyFilter">Filter by technology</label>
+
+        <select id="technologyFilter">
+          <option value="all">All technologies</option>
+          <option value="python">Python</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="git">Git and GitHub</option>
+          <option value="ai">AI tools</option>
+        </select>
+
+        <p id="projectCount" role="status" aria-live="polite">
+          Showing 5 projects
+        </p>
+      </div>
+
+      <div class="project-list" id="projectList">
+
+        <!-- Project 1 -->
+        <article class="project-card"
+          data-tech="python git"
+          data-search="python programs collection factorial fibonacci structure dictionary readme">
+
+          <h3>1. Python Programs Collection</h3>
+
+          <p>
+            A collection of Python programs covering factorial calculation,
+            Fibonacci sequences, and conversion of structures into
+            dictionaries, with an updated README.
+          </p>
+
+          <p><strong>Technologies:</strong> Python, Git, GitHub</p>
+
+          <a
+            href="https://github.com/deetyabatra4/python-programs-collection.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-repo-link
+            aria-label="Open Python Programs Collection repository"
+          >GitHub Repository</a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card"
+          data-tech="python ai git"
+          data-search="messy python code improvement refactoring ai assistance readability maintainability">
+
+          <h3>2. Messy Python Code Improvement</h3>
+
+          <p>
+            An existing Python script improved with AI-assisted development
+            to make the code more readable, organized, and maintainable.
+          </p>
+
+          <p><strong>Technologies:</strong> Python, AI Tools, GitHub</p>
+
+          <a
+            href="https://github.com/deetyabatra4/messy-python-code-improvement-.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-repo-link
+            aria-label="Open Messy Python Code Improvement repository"
+          >GitHub Repository</a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card"
+          data-tech="python ai git"
+          data-search="bug fixing cursor ai debugging incorrect program error correction testing">
+
+          <h3>3. Bug Fixing Using Cursor AI</h3>
+
+          <p>
+            A debugging project focused on identifying errors, understanding
+            incorrect program behavior, and correcting code with assistance
+            from Cursor AI.
+          </p>
+
+          <p><strong>Technologies:</strong> Programming, Cursor AI, GitHub</p>
+
+          <a
+            href="https://github.com/deetyabatra4/bug-fixing-using-cursor-ai.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-repo-link
+            aria-label="Open Bug Fixing Using Cursor AI repository"
+          >GitHub Repository</a>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card"
+          data-tech="html css javascript git"
+          data-search="interactive quiz application questions answers score interactive web application lecture 10">
+
+          <h3>4. Interactive Quiz Application</h3>
+
+          <p>
+            An interactive quiz application developed as a practical
+            assignment, designed to let users answer questions and engage
+            with a quiz interface.
+          </p>
+
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+          <a
+            href="https://github.com/deetyabatra4/interactive-quiz-application.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-repo-link
+            aria-label="Open Interactive Quiz Application repository"
+          >GitHub Repository</a>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card"
+          data-tech="html css javascript git"
+          data-search="book reading list application books reading tracker reading list lecture 11">
+
+          <h3>5. Book Reading List Application</h3>
+
+          <p>
+            A reading-list application developed as a practical assignment
+            to organize and manage a list of books. The repository README
+            should include the deployed application link.
+          </p>
+
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+          <a
+            href="https://github.com/deetyabatra4/book-reading-list-application.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-repo-link
+            aria-label="Open Book Reading List Application repository"
+          >GitHub Repository</a>
+        </article>
+
+      </div>
+
+      <p id="noProjects" hidden>
+        No projects match your search. Try another keyword or technology.
+      </p>
+    </section>
+
+    <!-- Weather application retained from the original website -->
+    <section id="weather" aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Weather Dashboard</h2>
+
+      <p>
+        Search for a city's weather if the weather functionality is
+        configured in your JavaScript.
+      </p>
+
+      <label for="cityInput">City</label>
+
+      <div class="weather-controls">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter a city"
+          autocomplete="off"
+        />
+
+        <button type="button" id="weatherButton">
+          Get Weather
+        </button>
+      </div>
+
+      <div id="weatherResult" role="status" aria-live="polite">
+        Enter a city to see the weather.
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+
+      <p>
+        I am open to learning opportunities, collaboration, and
+        interesting development projects.
+      </p>
+
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/deetyabatra4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Visit GitHub</a>
+      </p>
+
+      <!-- Add your actual GitHub profile URL and email address here. -->
+    </section>
+
+    <!-- AI chatbot -->
+    <section id="aiChatSection" class="ai-chat"
+      aria-labelledby="chat-heading">
+
+      <h2 id="chat-heading">Ask My AI Assistant</h2>
+
+      <p>
+        Ask questions about my skills, programming projects, technologies,
+        and development experience.
+      </p>
+
+      <div id="chatMessages" aria-live="polite"
+        aria-label="Chat conversation">
+      </div>
+
+      <form id="chatForm" class="chat-controls">
+        <label for="userInput">Your question</label>
+
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask about my projects..."
+          autocomplete="off"
+          required
+        />
+
+        <button id="sendButton" type="submit">
+          Send
+        </button>
+      </form>
+
+      <p id="chatStatus" role="status" aria-live="polite"></p>
+
+      <p class="chat-note">
+        The assistant requires a correctly configured API connection.
+        API credentials must remain on the server and must not be published
+        in this HTML file or in a public repository.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      &copy; <span id="currentYear"></span> Aman Kumawat.
+      Personal Developer Portfolio.
+    </p>
+  </footer>
+
+  <!-- Existing JavaScript files -->
+  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="chatbot.js"></script>
+
+  <!-- Portfolio search, filtering, and theme toggle -->
+  <script>
+    (() => {
+      const searchInput = document.getElementById("projectSearch");
+      const technologyFilter =
+        document.getElementById("technologyFilter");
+      const projectCards = [
+        ...document.querySelectorAll(".project-card")
+      ];
+      const projectCount = document.getElementById("projectCount");
+      const noProjects = document.getElementById("noProjects");
+
+      function filterProjects() {
+        const query = searchInput.value.trim().toLowerCase();
+        const selectedTechnology = technologyFilter.value;
+        let visibleCount = 0;
+
+        projectCards.forEach((card) => {
+          const searchableText =
+            (card.innerText + " " + card.dataset.search + " " +
+             card.dataset.tech).toLowerCase();
+
+          const technologies =
+            (card.dataset.tech || "").toLowerCase().split(/\s+/);
+
+          const matchesSearch = searchableText.includes(query);
+          const matchesTechnology =
+            selectedTechnology === "all" ||
+            technologies.includes(selectedTechnology);
+
+          const isVisible = matchesSearch && matchesTechnology;
+
+          card.hidden = !isVisible;
+
+          if (isVisible) {
+            visibleCount++;
+          }
+        });
+
+        projectCount.textContent =
+          `Showing ${visibleCount} of ${projectCards.length} projects`;
+
+        noProjects.hidden = visibleCount !== 0;
+      }
+
+      searchInput.addEventListener("input", filterProjects);
+      technologyFilter.addEventListener("change", filterProjects);
+
+      // Light/dark theme
+      const themeToggle = document.getElementById("themeToggle");
+      const savedTheme = localStorage.getItem("portfolio-theme");
+
+      function setTheme(theme) {
+        const isDark = theme === "dark";
+
+        document.body.classList.toggle("dark-mode", isDark);
+        themeToggle.textContent = isDark
+          ? "Switch to Light Mode"
+          : "Switch to Dark Mode";
+
+        themeToggle.setAttribute("aria-pressed", String(isDark));
+        localStorage.setItem("portfolio-theme", theme);
+      }
+
+      setTheme(savedTheme === "dark" ? "dark" : "light");
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains("dark-mode");
+        setTheme(isDark ? "light" : "dark");
+      });
+
+      // Footer year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Chat form compatibility:
+      // chatbot.js should listen to the chatForm submit event, or
+      // handle the existing sendButton click without reloading the page.
+      filterProjects();
+    })();
+  </script>
+</body>
+</html>
